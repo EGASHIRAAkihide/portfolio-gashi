@@ -1,11 +1,11 @@
 const userData = {
-  githubUsername: "manuarora700",
-  name: "Manu Arora",
-  designation: "Full-Stack Developer",
+  githubUsername: "AKIHIDEEgashira",
+  name: "GASHI(AKIHIDE Egashira)",
+  designation: "Full-Stack Developer / UI Designer",
   avatarUrl: "/avatar.png",
-  email: "manuarorawork@gmail.com",
-  phone: "+91 9587738861",
-  address: "Jaipur, Rajasthan, India.",
+  email: "egashira.akihide@gmail.com",
+  phone: "00000000000",
+  address: "Tokyo, Japan",
   projects: [
     {
       title: "Tailwind Master Kit",
