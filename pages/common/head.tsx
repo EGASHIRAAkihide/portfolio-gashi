@@ -4,9 +4,9 @@ import Head from 'next/head'
 const data =
   {
     title: 'GASHI portfolio',
-
+    description: "I'm now a Frontend Developer, UIUX Designer and Hiphop Dancer.",
+    keywords: "gashi, freelance, website, frontend, developer, ui, ux, designer, hiphop, dancer",
   }
-
 
 export const HeadMeta = () => {
   return (
@@ -14,8 +14,8 @@ export const HeadMeta = () => {
       <title>{data.title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta name="desctiption" content="I'm now a Frontend Developer, UIUX Designer and Hiphop Dancer." />
-      <meta name="keywords" content="gashi, freelance, website, frontend, developer, ui, ux, designer, hiphop, dancer" />
+      <meta name="desctiption" content={data.description} />
+      <meta name="keywords" content={data.keywords} />
     </Head>
   )
 }
