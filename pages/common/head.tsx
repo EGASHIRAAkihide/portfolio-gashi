@@ -19,3 +19,5 @@ export const HeadMeta = () => {
     </Head>
   )
 }
+
+export default HeadMeta

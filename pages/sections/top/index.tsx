@@ -12,3 +12,5 @@ export const TopSection = () => {
     </section>
   )
 }
+
+export default TopSection

@@ -5,7 +5,7 @@ type Props = {
 }
 
 export const Navbar = ({
-  link = 'https://flowbite.com/',
+  link,
 }: Props) => {
   return (
     <FlowbiteNavbar
@@ -14,7 +14,7 @@ export const Navbar = ({
     >
       <FlowbiteNavbar.Brand href={link}>
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-          Flowbite
+          GASHI
         </span>
       </FlowbiteNavbar.Brand>
       <FlowbiteNavbar.Toggle />
@@ -29,10 +29,7 @@ export const Navbar = ({
           About
         </FlowbiteNavbar.Link>
         <FlowbiteNavbar.Link href="#">
-          Services
-        </FlowbiteNavbar.Link>
-        <FlowbiteNavbar.Link href="#">
-          Pricing
+          Works
         </FlowbiteNavbar.Link>
         <FlowbiteNavbar.Link href="#">
           Contact
