@@ -14,7 +14,7 @@ export const Navbar = ({
     >
       <FlowbiteNavbar.Brand href={link}>
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-          GASHI
+          GASHI LABO
         </span>
       </FlowbiteNavbar.Brand>
       <FlowbiteNavbar.Toggle />
