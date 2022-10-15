@@ -1,6 +1,5 @@
 import { Footer as FlowbiteFooter } from "flowbite-react";
-import { BsFacebook, BsInstagram, BsTwitter, BsGithub } from 'react-icons/bs';
-
+import { BsFacebook, BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
 
 export const Footer = () => {
   return (
@@ -19,18 +18,10 @@ export const Footer = () => {
             <div>
               <FlowbiteFooter.Title title="Sitemap" />
               <FlowbiteFooter.LinkGroup col={true}>
-                <FlowbiteFooter.Link href="#">
-                  Home
-                </FlowbiteFooter.Link>
-                <FlowbiteFooter.Link href="#">
-                  About
-                </FlowbiteFooter.Link>
-                <FlowbiteFooter.Link href="#">
-                  Works
-                </FlowbiteFooter.Link>
-                <FlowbiteFooter.Link href="#">
-                  Contact
-                </FlowbiteFooter.Link>
+                <FlowbiteFooter.Link href="#">Home</FlowbiteFooter.Link>
+                <FlowbiteFooter.Link href="#">About</FlowbiteFooter.Link>
+                <FlowbiteFooter.Link href="#">Works</FlowbiteFooter.Link>
+                <FlowbiteFooter.Link href="#">Contact</FlowbiteFooter.Link>
               </FlowbiteFooter.LinkGroup>
             </div>
             <div>
@@ -59,11 +50,7 @@ export const Footer = () => {
         </div>
         <FlowbiteFooter.Divider />
         <div className="w-full sm:flex sm:items-center sm:justify-between">
-          <FlowbiteFooter.Copyright
-            href="#"
-            by="GASHI LABO"
-            year={2022}
-          />
+          <FlowbiteFooter.Copyright href="#" by="GASHI LABO" year={2022} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <FlowbiteFooter.Icon
               href="https://www.facebook.com/akihide.egashira.1"
@@ -85,5 +72,5 @@ export const Footer = () => {
         </div>
       </div>
     </FlowbiteFooter>
-  )
-}
+  );
+};

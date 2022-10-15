@@ -1,8 +1,8 @@
-import type { NextPage } from 'next'
-import HeadMeta from './common/head'
-import { Navbar } from '../components/navbar'
-import { Footer } from '../components/footer'
-import TopSection from './sections/top'
+import type { NextPage } from "next";
+import HeadMeta from "./common/head";
+import { Navbar } from "../components/navbar";
+import { Footer } from "../components/footer";
+import TopSection from "./sections/top";
 
 const Home: NextPage = () => {
   return (
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         <Footer />
       </main>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
