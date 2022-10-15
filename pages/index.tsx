@@ -1,14 +1,17 @@
 import type { NextPage } from 'next'
-import { Alert } from "flowbite-react"
-import { HeadMeta } from './common/head'
+import HeadMeta from './common/head'
+import { Navbar } from '../components/navbar'
+import { Footer } from '../components/footer'
+import TopSection from './sections/top'
 
 const Home: NextPage = () => {
   return (
     <>
       <HeadMeta />
       <main>
-        <Alert color="info">Alert!</Alert>
-        <div>adsfasdfasdf</div>
+        <Navbar link="https://portfolio-gashi.vercel.app/" />
+        <TopSection />
+        <Footer />
       </main>
     </>
   )
