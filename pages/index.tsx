@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import HeadMeta from "./common/head";
 import { Navbar } from "../components/navbar";
 import { Footer } from "../components/footer";
-import TopSection from "./sections/top";
 import { Sidebar } from "../components/sidebar";
 
 const Home: NextPage = () => {
@@ -15,7 +14,6 @@ const Home: NextPage = () => {
           <Sidebar />
           <div>asdfasdfasdf</div>
         </div>
-        {/* <TopSection /> */}
         <Footer />
       </main>
     </>
