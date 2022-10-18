@@ -3,7 +3,7 @@ import { BsFacebook, BsInstagram, BsTwitter, BsGithub } from "react-icons/bs";
 
 export const Footer = () => {
   return (
-    <FlowbiteFooter container={true}>
+    <FlowbiteFooter container={true} style={{ position: "fixed", bottom: 0 }}>
       <FlowbiteFooter.Copyright href="#" by="GASHI LABO" year={2022} />
       <FlowbiteFooter.LinkGroup>
         <FlowbiteFooter.Link href="#">About</FlowbiteFooter.Link>

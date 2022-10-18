@@ -15,8 +15,8 @@ export const Sidebar = () => {
       <FlowbiteSidebar aria-label="sidebar">
         <FlowbiteSidebar.Items>
           <FlowbiteSidebar.ItemGroup>
-            <FlowbiteSidebar.Item href="#" icon={HiChartPie}>
-              Dashboard
+            <FlowbiteSidebar.Item href="/dashboard" icon={HiChartPie}>
+              About GASHI
             </FlowbiteSidebar.Item>
             <FlowbiteSidebar.Item
               href="#"
@@ -24,15 +24,15 @@ export const Sidebar = () => {
               label="Pro"
               labelColor="alternative"
             >
-              Kanban
+              Works
             </FlowbiteSidebar.Item>
             <FlowbiteSidebar.Item href="#" icon={HiInbox} label="3">
-              Inbox
+              Contact
             </FlowbiteSidebar.Item>
             <FlowbiteSidebar.Item href="#" icon={HiUser}>
-              Users
+              Design System
             </FlowbiteSidebar.Item>
-            <FlowbiteSidebar.Item href="#" icon={HiShoppingBag}>
+            {/* <FlowbiteSidebar.Item href="#" icon={HiShoppingBag}>
               Products
             </FlowbiteSidebar.Item>
             <FlowbiteSidebar.Item href="#" icon={HiArrowSmRight}>
@@ -40,7 +40,7 @@ export const Sidebar = () => {
             </FlowbiteSidebar.Item>
             <FlowbiteSidebar.Item href="#" icon={HiTable}>
               Sign Up
-            </FlowbiteSidebar.Item>
+            </FlowbiteSidebar.Item> */}
           </FlowbiteSidebar.ItemGroup>
         </FlowbiteSidebar.Items>
       </FlowbiteSidebar>
