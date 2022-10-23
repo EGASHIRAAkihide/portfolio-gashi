@@ -11,6 +11,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.10",
     "flowbite": "^1.5.3",
     "flowbite-react": "^0.1.11",
     "next": "12.2.5",

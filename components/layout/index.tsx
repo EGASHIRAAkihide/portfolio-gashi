@@ -12,7 +12,7 @@ export const Layout = ({ children }: any) => {
       <Navbar link="https://portfolio-gashi.vercel.app/" />
       <div className="flex gap-4">
         <Sidebar />
-        <main className="w-full">{children}</main>
+        <main className="h-full w-full p-4">{children}</main>
       </div>
       <Footer />
     </div>

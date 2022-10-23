@@ -1,13 +1,7 @@
-import {
-  HiArrowSmRight,
-  HiChartPie,
-  HiInbox,
-  HiShoppingBag,
-  HiTable,
-  HiUser,
-  HiViewBoards,
-} from "react-icons/hi";
+import { HiChartPie, HiInbox, HiUser, HiViewBoards } from "react-icons/hi";
+import SettingsAccessibilityIcon from "@mui/icons-material/SettingsAccessibility";
 import { Sidebar as FlowbiteSidebar } from "flowbite-react";
+import SvgIcon from "@mui/icons-material/SettingsAccessibility";
 
 export const Sidebar = () => {
   return (
@@ -15,7 +9,14 @@ export const Sidebar = () => {
       <FlowbiteSidebar aria-label="sidebar">
         <FlowbiteSidebar.Items>
           <FlowbiteSidebar.ItemGroup>
-            <FlowbiteSidebar.Item href="/dashboard" icon={HiChartPie}>
+            <FlowbiteSidebar.Item href="/" icon={HiChartPie}>
+              HOME
+            </FlowbiteSidebar.Item>
+            <FlowbiteSidebar.Item
+              href="/about"
+              icon={<SvgIcon component={SettingsAccessibilityIcon} />}
+            >
+              <SettingsAccessibilityIcon />
               About GASHI
             </FlowbiteSidebar.Item>
             <FlowbiteSidebar.Item
