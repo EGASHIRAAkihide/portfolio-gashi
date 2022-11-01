@@ -12,15 +12,16 @@ export const Sidebar = () => {
             <FlowbiteSidebar.Item href="/" icon={HiChartPie}>
               HOME
             </FlowbiteSidebar.Item>
-            <FlowbiteSidebar.Item
-              href="/about"
-              icon={<SvgIcon component={SettingsAccessibilityIcon} />}
-            >
+            <div>
+              <SettingsAccessibilityIcon />
+              About GASHI
+            </div>
+            <FlowbiteSidebar.Item href="/about">
               <SettingsAccessibilityIcon />
               About GASHI
             </FlowbiteSidebar.Item>
             <FlowbiteSidebar.Item
-              href="#"
+              href="/works"
               icon={HiViewBoards}
               label="Pro"
               labelColor="alternative"
