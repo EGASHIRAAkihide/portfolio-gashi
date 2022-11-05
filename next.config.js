@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "",
-  experimental: { images: { allowFutureImage: true } },
-  reactStrictMode: true,
-  swcMinify: true,
-};
+  experimental: {
+    appDir: true,
+  },
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
