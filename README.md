@@ -1,25 +1,5 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## References
-
-- [AI MODEL](https://www.ai-model.jp/)
-- [rollie](https://www.rollienation.com/)
-- [dhw](https://www.dhw.co.jp/)
-- [setomaneki](https://setomaneki.jp/)
-- [JHRS TOWN](https://new.jhrs.or.jp/jhrs-town/)
-- [E SALON](https://esalon-srl.com/)
-- [EPYTOTORP](https://epytotorp.panasonic.co.jp/)
-- [flowman](https://www.flowman.dev/)
-- [bannach](https://bannach.eu/)
-- [helios](https://www.helios-syuzo.co.jp/product/shimabeer)
-- [choco nuts](https://choco-nuts.jp/)
-- [zakone](https://zakone.jp/)
-- [pastel color](https://offeo.com/learn/pastel-colors-palette)
-
-## animation
-
-- [Pure CSS Gradient Background Animation](https://codepen.io/P1N2O/pen/pyBNzX)
-
 ## Getting Started
 
 First, run the development server:
