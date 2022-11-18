@@ -1,4 +1,5 @@
 import { getAllPostIds, getPostData } from '../../lib/posts'
+import Date from '../../components/date'
 
 export default function Post({ postData }: any) {
   return (
@@ -7,7 +8,8 @@ export default function Post({ postData }: any) {
       <br />
       {postData.id}
       <br />
-      {postData.date}
+      <Date dateString={postData.date} />
+      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </div>
     
   )
@@ -22,7 +24,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: any) {
-  const postData = getPostData(params.id)
+  const postData = await getPostData(params.id)
   return {
     props: {
       postData
