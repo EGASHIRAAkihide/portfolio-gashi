@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Navbar from './navbar';
 
 type Props = {
   children: React.ReactNode
@@ -14,6 +15,7 @@ export default function Layout({ children }: Props) {
       </Head>
 
       <main>
+        <Navbar />
         {children}
       </main>
 
