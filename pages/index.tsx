@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 import Date from '../components/date';
 import Head from 'next/head';
+import { Button } from '@nextui-org/react';
 
 type Props = {
   allPostsData: {
@@ -18,6 +19,7 @@ export default function Home({ allPostsData }: Props) {
       <Head>
         <title>title</title>
       </Head>
+      <Button>Click me</Button>
       <section>
         <p>
           Hello, I’m <strong>Shu</strong>. I’m a software engineer and a
