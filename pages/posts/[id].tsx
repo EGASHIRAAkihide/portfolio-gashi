@@ -1,5 +1,6 @@
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Date from '../../components/date'
+import Link from 'next/link'
 
 export default function Post({ postData }: any) {
   return (
@@ -10,8 +11,8 @@ export default function Post({ postData }: any) {
       <br />
       <Date dateString={postData.date} />
       <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      <Link href='/'>Go back to Home</Link>
     </div>
-    
   )
 }
 

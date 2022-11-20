@@ -4,11 +4,11 @@ export default function Navbar() {
   return (
     <NextUiNavbar isBordered variant="floating">
       <NextUiNavbar.Brand>
-        <Text b color="inherit" hideIn="xs">
+        <Text b color="inherit">
           GASHI
         </Text>
       </NextUiNavbar.Brand>
-      <NextUiNavbar.Content hideIn="xs">
+      <NextUiNavbar.Content>
         <NextUiNavbar.Link href="#">About</NextUiNavbar.Link>
         <NextUiNavbar.Link isActive href="#">Works</NextUiNavbar.Link>
         <NextUiNavbar.Link href="#">Contact</NextUiNavbar.Link>
