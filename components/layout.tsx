@@ -1,5 +1,7 @@
+import { Container } from '@nextui-org/react';
 import Head from 'next/head'
 import Navbar from './navbar';
+import { NextUIProvider } from '@nextui-org/react';
 
 type Props = {
   children: React.ReactNode
@@ -15,8 +17,12 @@ export default function Layout({ children }: Props) {
       </Head>
 
       <main>
-        <Navbar />
-        {children}
+        <NextUIProvider>
+          <Navbar />
+          <Container fluid css={{backgroundColor: '#00ff00'}}>
+            {children}
+          </Container>
+        </NextUIProvider>
       </main>
 
       <footer>

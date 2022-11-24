@@ -1,9 +1,8 @@
-import Link from 'next/link';
 import Layout from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
-import Date from '../components/date';
 import Head from 'next/head';
-import { Button } from '@nextui-org/react';
+import { Button, Grid } from '@nextui-org/react';
+import Card from '../components/card';
 
 type Props = {
   allPostsData: {
@@ -17,7 +16,7 @@ export default function Home({ allPostsData }: Props) {
   return (
     <Layout>
       <Head>
-        <title>title</title>
+        <title>GASHI website</title>
       </Head>
       <Button>Click me</Button>
       <section>
@@ -33,17 +32,19 @@ export default function Home({ allPostsData }: Props) {
       </section>
       <section>
         <h2>Blog</h2>
-        <ul>
-          {allPostsData.map(({ id, date, title }) => (
-            <li key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
-              <br />
-              <small>
-                <Date dateString={date} />
-              </small>
-            </li>
+        <Grid.Container gap={2}>
+          {allPostsData.map(({id, date, title}) => (
+            <Grid xs={12} sm={6} md={3} key={id}>
+              <Card
+                date={date}
+                href={`/posts/${id}`}
+                src="https://picsum.photos/200/300"
+                title={title}
+                text="texttexttext1234"
+              />
+            </Grid>
           ))}
-        </ul>
+        </Grid.Container>
       </section>
     </Layout>
   )
