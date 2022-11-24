@@ -32,7 +32,7 @@ export default function Home({ allPostsData }: Props) {
       </section>
       <section>
         <h2>Blog</h2>
-        <Grid.Container gap={1}>
+        <Grid.Container gap={2}>
           {allPostsData.map(({id, date, title}) => (
             <Grid xs={12} sm={6} md={3} key={id}>
               <Card
