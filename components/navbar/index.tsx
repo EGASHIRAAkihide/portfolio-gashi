@@ -1,4 +1,5 @@
-import { Navbar as NextUiNavbar, Button, Link, Text } from "@nextui-org/react";
+import { Navbar as NextUiNavbar, Text } from "@nextui-org/react";
+import Link from 'next/link'
 
 export default function Navbar() {  
   return (
@@ -9,9 +10,9 @@ export default function Navbar() {
         </Text>
       </NextUiNavbar.Brand>
       <NextUiNavbar.Content>
-        <NextUiNavbar.Link href="#">About</NextUiNavbar.Link>
-        <NextUiNavbar.Link isActive href="#">Works</NextUiNavbar.Link>
-        <NextUiNavbar.Link href="#">Contact</NextUiNavbar.Link>
+        <Link href="#">About</Link>
+        <Link href="#">Works</Link>
+        <Link href="#">Contact</Link>
       </NextUiNavbar.Content>
       {/* TODO: authentication付与 */}
       {/* <NextUiNavbar.Content>
