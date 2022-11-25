@@ -23,7 +23,7 @@ export const Form = () => {
               status={errors.name ? 'error' : 'primary'}
               {...register("name" , { required: true })}
             />
-            {!errors.name && (
+            {errors.name && (
             <Text color="error" size="$sm" css={{margin: "$4 0 0 $2"}}>
               Name is required
             </Text>
@@ -40,7 +40,7 @@ export const Form = () => {
             status={errors.email ? 'error' : 'primary'}
             {...register("email", { required: true })}
           />
-          {!errors.email && (
+          {errors.email && (
           <Text color="error" size="$sm" css={{margin: "$4 0 0 $2"}}>
             Email is required
           </Text>
@@ -59,7 +59,7 @@ export const Form = () => {
               status={errors.text ? 'error' : 'primary'}
               {...register("text", { required: true })}
             />
-            {!errors.text && (
+            {errors.text && (
             <Text color="error" size="$sm" css={{margin: "$4 0 0 $2"}}>
               Text is required
             </Text>
