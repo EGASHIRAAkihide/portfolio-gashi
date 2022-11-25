@@ -1,5 +1,5 @@
 import { useForm, SubmitHandler } from "react-hook-form";
-import { Container, Row, Input, Button, Textarea, Spacer } from '@nextui-org/react';
+import { Container, Row, Input, Button, Textarea, Spacer, Text, Col } from '@nextui-org/react';
 
 type InputProps = {
   name: string;
@@ -15,35 +15,56 @@ export const Form = () => {
       <form>
         <Spacer y={2} />
         <Row>
-          <Input
-            bordered
-            labelPlaceholder="Name" 
-            initialValue="名前を記入"
-            width="100%"
-            {...register("name" , { required: true })}
-          />
+          <Col>
+            <Input
+              bordered
+              labelPlaceholder="Name" 
+              width="100%"
+              status={errors.name ? 'error' : 'primary'}
+              {...register("name" , { required: true })}
+            />
+            {!errors.name && (
+            <Text color="error" size="$sm" css={{margin: "$4 0 0 $2"}}>
+              Name is required
+            </Text>
+            )}
+          </Col>
         </Row>
         <Spacer y={2} />
         <Row>
+          <Col>
           <Input
             bordered
             labelPlaceholder="Email" 
-            initialValue="メールアドレスを記入"
             width="100%"
+            status={errors.email ? 'error' : 'primary'}
             {...register("email", { required: true })}
           />
+          {!errors.email && (
+          <Text color="error" size="$sm" css={{margin: "$4 0 0 $2"}}>
+            Email is required
+          </Text>
+          )}
+          </Col>
         </Row>
         <Spacer y={2} />
         <Row>
-          <Textarea
-            bordered
-            color="primary"
-            labelPlaceholder="Text"
-            rows={3}
-            initialValue="内容を記入"
-            width="100%"
-            {...register("text", { required: true })}
-          />
+          <Col>
+            <Textarea
+              bordered
+              color="primary"
+              labelPlaceholder="Text"
+              rows={3}
+              width="100%"
+              status={errors.text ? 'error' : 'primary'}
+              {...register("text", { required: true })}
+            />
+            {!errors.text && (
+            <Text color="error" size="$sm" css={{margin: "$4 0 0 $2"}}>
+              Text is required
+            </Text>
+            )}
+          </Col>
         </Row>
         <Spacer y={2} />
         <Row justify="center">
