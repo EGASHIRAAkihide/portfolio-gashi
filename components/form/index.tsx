@@ -1,4 +1,4 @@
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { Container, Row, Input, Button, Textarea, Spacer, Text, Col } from '@nextui-org/react';
 
 type InputProps = {
@@ -20,9 +20,6 @@ export const Form = () => {
       body : JSON.stringify({message: `Name: ${watchName}\nEMail: ${watchEmail}\nText： ${watchText}`}),
     })
       .then((response) => response.text())
-      .then((data) => {
-        console.log('Success:', data)
-      })
       .catch((error) => {
         console.error('Error:', error)
       })
