@@ -10,9 +10,26 @@ type InputProps = {
 
 export const Form = () => {
   const { register, handleSubmit, watch, formState: { errors } } = useForm<InputProps>();
+  const watchName = watch('name')
+  const watchEmail = watch('email')
+  const watchText = watch('text')
+  const onSubmit = async () => {
+    fetch('/api/comments', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json; charset=utf-8' },
+      body : JSON.stringify({message: `Name: ${watchName}\nEMail: ${watchEmail}\nText： ${watchText}`}),
+    })
+      .then((response) => response.text())
+      .then((data) => {
+        console.log('Success:', data)
+      })
+      .catch((error) => {
+        console.error('Error:', error)
+      })
+  }
   return (
     <Container css={{maxWidth: "400px"}}>
-      <form>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <Spacer y={2} />
         <Row>
           <Col>
