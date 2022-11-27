@@ -1,5 +1,7 @@
 import { useForm } from "react-hook-form";
 import { Container, Row, Input, Button, Textarea, Spacer, Text, Col } from '@nextui-org/react';
+import { Alert } from "../alert";
+import STATUS_MESSAGE from "../../data/statusMessage";
 
 type InputProps = {
   name: string;
@@ -9,7 +11,7 @@ type InputProps = {
 }
 
 export const Form = () => {
-  const { register, handleSubmit, watch, formState: { errors } } = useForm<InputProps>();
+  const { register, handleSubmit, watch, formState: { errors, isSubmitted, isSubmitSuccessful } } = useForm<InputProps>();
   const watchName = watch('name')
   const watchEmail = watch('email')
   const watchText = watch('text')
@@ -17,16 +19,33 @@ export const Form = () => {
     fetch('/api/comments', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json; charset=utf-8' },
-      body : JSON.stringify({message: `Name: ${watchName}\nEMail: ${watchEmail}\nText： ${watchText}`}),
+      body : JSON.stringify({message: `Name: ${watchName}\nEmail: ${watchEmail}\nText： ${watchText}`}),
     })
-      .then((response) => response.text())
+      .then((response) => {
+        response.text()
+      })
       .catch((error) => {
         console.error('Error:', error)
       })
   }
+
   return (
     <Container css={{maxWidth: "400px"}}>
       <form onSubmit={handleSubmit(onSubmit)}>
+        {isSubmitted && (
+          isSubmitSuccessful
+            ? (
+            <Alert
+              status="success"
+              text={STATUS_MESSAGE.SUCCESS}
+            />
+          ) : (
+            <Alert
+              status="error"
+              text={STATUS_MESSAGE.ERROR}
+            />
+          )
+        )}
         <Spacer y={2} />
         <Row>
           <Col>

@@ -4,6 +4,8 @@ import Head from 'next/head';
 import { Button, Grid } from '@nextui-org/react';
 import Card from '../components/card';
 import { Form } from '../components/form';
+import { Alert } from '../components/alert';
+import STATUS_MESSAGE from '../data/statusMessage';
 
 type Props = {
   allPostsData: {
