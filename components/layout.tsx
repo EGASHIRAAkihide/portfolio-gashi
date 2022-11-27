@@ -19,7 +19,7 @@ export default function Layout({ children }: Props) {
       <main>
         <NextUIProvider>
           <Navbar />
-          <Container fluid css={{backgroundColor: '#00ff00'}}>
+          <Container fluid>
             {children}
           </Container>
         </NextUIProvider>
