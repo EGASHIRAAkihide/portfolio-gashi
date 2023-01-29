@@ -9,7 +9,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>adsf</main>
+      <main>
+        <div className="w-full">
+          <div className="flex h-screen items-center justify-center mx-auto my-0 w-4/5 max-w-[1000px]">
+            adsf
+          </div>
+        </div>
+      </main>
     </>
   );
 }
