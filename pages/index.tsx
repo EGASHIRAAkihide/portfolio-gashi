@@ -12,7 +12,7 @@ export default function Home() {
       <main>
         <div className="w-full">
           <div className="flex h-screen items-center justify-center mx-auto my-0 w-4/5 max-w-[1000px]">
-            adsf
+            GASHI portfolio
           </div>
         </div>
       </main>
