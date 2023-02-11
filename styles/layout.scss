@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1E1D22;
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100vw;
+}
+
+aside {
+  background-color: red;
+  flex-basis: 90px;
+  height: 100%;
+}
+
+main {
+  flex-basis: calc(100% - 90px);
+  height: 100%;
+}

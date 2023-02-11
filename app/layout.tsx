@@ -1,5 +1,6 @@
 import { Nav } from '@/components/nav'
 import 'styles/global.scss'
+import 'styles/layout.scss'
 
 export default function RootLayout({
   children,
@@ -9,6 +10,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta charSet="utf-8" />
         <title>GASHI portfolio</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta name="description" content="Gashi portfolio" />

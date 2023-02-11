@@ -5,8 +5,10 @@ export const Nav = () => {
     <div>
       <ul>
         <li>
-          <Link href='/'>
-            link
+          <Link href='https://github.com/EGASHIRAAkihide' legacyBehavior>
+            <a target='_blank'>
+              GitHub
+            </a>
           </Link>
         </li>
       </ul>
