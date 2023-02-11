@@ -1,4 +1,5 @@
-import './globals.css'
+import { Nav } from '@/components/nav'
+import 'styles/global.scss'
 
 export default function RootLayout({
   children,
@@ -7,13 +8,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
+      <head>
+        <title>GASHI portfolio</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="description" content="Gashi portfolio" />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body>
-        <aside>aside</aside>
+        <aside>
+          <Nav />
+        </aside>
         <main>
           {children}
         </main>
