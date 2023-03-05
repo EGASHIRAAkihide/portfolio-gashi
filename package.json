@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "style": "npx prettier --write app/**/*.{ts,tsx} components/**/*.tsx && yarn lint"
   },
   "dependencies": {
     "@types/node": "18.14.1",
@@ -31,12 +32,12 @@
   },
   "lint-staged":{
     "app/**/*.{js,jsx,ts,tsx}":[
-      "npx prettier --write",
-      "npx eslint --fix"
+      "npx prettier --write app/**/*.{ts,tsx} components/**/*.tsx",
+      "yarn lint"
     ],
     "components/**/*.{js,jsx,ts,tsx}":[
-      "npx prettier --write",
-      "npx eslint --fix"
+      "npx prettier --write app/**/*.{ts,tsx} components/**/*.tsx",
+      "yarn lint"
     ]
   }
 }
