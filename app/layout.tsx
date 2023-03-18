@@ -18,7 +18,7 @@ export default function RootLayout({
 }: Props) {
 	return (
 		<html lang='en'>
-			<body>
+			<body className='bg-black text-white w-full'>
 				<Header />
 				<main>{children}</main>
 				<Footer />

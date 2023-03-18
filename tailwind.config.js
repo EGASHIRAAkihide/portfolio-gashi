@@ -16,7 +16,34 @@ module.exports = {
         'desktop': '1280px',
       },
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        fadeIn: {
+          '0%': {
+            opacity: 0,
+            top: '-300px'
+          },
+          '100%': {
+            opacity: 1,
+            top: '80px'
+          }
+        },
+        fadeOut: {
+          '0%': {
+            opacity: 1,
+            top: '80px'
+          },
+          '100%': {
+            opacity: 0,
+            top: '-300px'
+          }
+        }
+      },
+      animation: {
+        navFadeIn: 'fadeIn 0.5s ease-out',
+        navFadeOut: 'fadeOut 0.5s ease-in'
+      },
+    },
   },
   plugins: [],
 }
